@@ -16,15 +16,11 @@ girlboss_palettes <- list(
 
 #' a girlboss palette generator
 #'
-#' these are a handful of color palettes i made (#girl #boss #moment!!!!! #mfs #in #stem) because I can't use cute pretty colors in my thesis
-#' unless they come from a palette. so, take that, higher education! you can't tell me what to do! even better, I named most of these
-#' palettes after some mfs I met on tinder. i made my fun pretty palette for my thesis, but then thought that itd be even funnier to build palettes based off
-#' of dudes i've seen this year (bc that's totally sane and professional!). i bet everyone reading through this is having so much fun seeing how
-#' #sane i am! please admit me into your grad program! i'm so cool and sexy and smart! shoutout to Karthik (if I figure out how to link their github,
-#' I will--i'm just really dumb ngl), whose 'wesanderson' color palette skeleton I ripped in order to build out my girboss package. xoxo thx, Karthik!
+#' these are a handful of color palettes i made (#girl #boss #moment!!!!! #mfs #in #stem)!! can't explain the inspiration behind the names of the palettes
+#' here but i bet you can prob guess!! #gatekeep #gaslight #girlboss!
 #'
-#' @param n Number of colors desired. unfortunately most palettes now only
-#'   have 6 colors. But hopefully i'll add more palettes soon (tinder moment). all color
+#' @param n Number of colors desired. unfortunately most palettes only
+#'   have 6 colors. hopefully i'll add more palettes soon (as i get more stories). all color
 #'   schemes are derived from my #beautiful #sexy #mind.
 #'   if omitted, uses all colors.
 #' @param name name of desired palette. choices are:
