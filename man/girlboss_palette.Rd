@@ -8,18 +8,17 @@ girlboss_palette(name, n, type = c("discrete", "continuous"))
 }
 \arguments{
 \item{name}{name of desired palette. choices are:
-\code{girlboss_in_question}, \code{ur_hot_when_u_cry},  \code{cicero_space_force_mf},
-\code{d1_medschool_mf}, \code{lovers_to_friends},  \code{one_night_stand_tm}, \code{thx_for_the_claws_ig},
-\code{bro_waited_4_yrs_lmao}}
+\code{girlboss_in_q}, \code{fem_in_stem}, \code{girls_when}, \code{hot_when_u_cry},  \code{space_force_cicero},
+\code{d1_medschool}, \code{elf_bar}}
 
-\item{n}{Number of colors desired. unfortunately most palettes only
+\item{n}{number of colors desired. unfortunately most palettes only
 have 6 colors. hopefully i'll add more palettes soon (as i get more stories). all color
 schemes are derived from my #beautiful #sexy #mind.
 if omitted, uses all colors.}
 
 \item{type}{either "continuous" or "discrete". use continuous if you want
 to automatically interpolate between colours.
-@importFrom graphics rgb rect par image text}
+ @importFrom graphics rgb rect par image text}
 }
 \value{
 a vector of colours.
@@ -29,14 +28,14 @@ these are a handful of color palettes i made (#girl #boss #moment!!!!! #mfs #in 
 here but i bet you can prob guess!! #gatekeep #gaslight #girlboss!
 }
 \examples{
-girlboss_palette("girlboss_in_question")
-girlboss_palette("d1_medschool_mf")
-girlboss_palette("ur_hot_when_u_cry", 3)
+girlboss_palette("girlboss_in_q")
+girlboss_palette("d1_medschool")
+girlboss_palette("fem_in_stem", 3)
 
 # if you need more colors than normally found in a palette, you
 # can use a continuous palette to interpolate between existing
 # colors
-pal <- girlboss_palette(21, name = "lovers_to_friends", type = "continuous")
+pal <- girlboss_palette(21, name = "fem_in_stem", type = "continuous")
 image(volcano, col = pal)
 }
 \keyword{colors}

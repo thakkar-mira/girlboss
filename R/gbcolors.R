@@ -4,14 +4,21 @@
 #'
 #' @export
 girlboss_palettes <- list(
-  girlboss_in_question = c("#aa08f2", "#f208c5", "#f20850", "#f23508", "#f2aa08", "#c5f208"),
-  ur_hot_when_u_cry = c("#406089", "#444089", "#694089", "#894084", "#894060", "#894440"),
-  cicero_space_force_mf = c("#31b600", "#00b62a", "#00b685", "#008cb6", "#0031b6","#2a00b6"),
-  d1_medschool_mf = c("#f68200", "0074f6", "#00f607", "#f600ef" ,"#00f682", "#d16ce9"),
-  lovers_to_friends = c("#00f6e9", "#0088f6", "#000df6", "#6e00f6", "#e900f6", "#f60088"),
-  one_night_stand_tm = c("#d729ff", "#ff29bc", "#ff2951", "#ff6c29", "#ffd729","#bcff29"),
-  thx_for_the_claws_ig = c("#002fd9", "#d9009c", "#d9aa00", "#00d93d", "#111216", "#b9bdc9"),
-  bro_waited_4_yrs_lmao = c("#0e00d8", "#7a00d8", "#d800ca", "#d8005e", "#d80e00", "#d87a00")
+
+  girlboss_in_q = c("#f208c5", "#f20850", "#f23508", "#f2aa08", "#c5f208", "#b9a59b","#17B5D5","#aa08f2"),
+
+  fem_in_stem = c("#ffb8f2","#ff0095", "#ff4d00", "#ffcc00", "#8f0053", "#ab6ad9", "#7b08ff", "#3b0022"),
+
+  girls_when = c("#EB0000", "#750000", "#0099DF", "#005780", "#989898", "#232A2D", "#7F4D2F", "#402718"),
+
+  hot_when_u_cry = c("#bdbdbd", "#a5a5a5","#8e8e8e", "#767676", "#5f5f5f", "#474747", "#2f2f2f", "#181818"),
+
+  space_force_cicero = c("#FFD100", "#31b600", "#169617", "#00b685", "#008cb6", "#0031b6","#7A22D6", "#40037F"),
+
+  d1_medschool = c("#FFBE80","#FF7C00", "#80A5FF", "#004AFF", "#AEC7A8", "#266916", "#A9AFBB","#535E77"),
+
+  elf_bar = c("#FF97E5", "#FF97B1", "#FFB197", "#FFE597", "#E5FF97", "#B1FF97", "#B9EFFF", "#DBB9FF")
+
 )
 
 #' a girlboss palette generator
@@ -19,29 +26,30 @@ girlboss_palettes <- list(
 #' these are a handful of color palettes i made (#girl #boss #moment!!!!! #mfs #in #stem)!! can't explain the inspiration behind the names of the palettes
 #' here but i bet you can prob guess!! #gatekeep #gaslight #girlboss!
 #'
-#' @param n Number of colors desired. unfortunately most palettes only
+#' @param n number of colors desired. unfortunately most palettes only
 #'   have 6 colors. hopefully i'll add more palettes soon (as i get more stories). all color
 #'   schemes are derived from my #beautiful #sexy #mind.
 #'   if omitted, uses all colors.
+#'
 #' @param name name of desired palette. choices are:
-#'   \code{girlboss_in_question}, \code{ur_hot_when_u_cry},  \code{cicero_space_force_mf},
-#'   \code{d1_medschool_mf}, \code{lovers_to_friends},  \code{one_night_stand_tm}, \code{thx_for_the_claws_ig},
-#'   \code{bro_waited_4_yrs_lmao}
+#'   \code{girlboss_in_q}, \code{fem_in_stem}, \code{girls_when}, \code{hot_when_u_cry},  \code{space_force_cicero},
+#'   \code{d1_medschool}, \code{elf_bar}
+#'
 #' @param type either "continuous" or "discrete". use continuous if you want
 #'   to automatically interpolate between colours.
-#'   @importFrom graphics rgb rect par image text
+#'    @importFrom graphics rgb rect par image text
 #' @return a vector of colours.
 #' @export
 #' @keywords colors
 #' @examples
-#' girlboss_palette("girlboss_in_question")
-#' girlboss_palette("d1_medschool_mf")
-#' girlboss_palette("ur_hot_when_u_cry", 3)
+#' girlboss_palette("girlboss_in_q")
+#' girlboss_palette("d1_medschool")
+#' girlboss_palette("fem_in_stem", 3)
 #'
 #' # if you need more colors than normally found in a palette, you
 #' # can use a continuous palette to interpolate between existing
 #' # colors
-#' pal <- girlboss_palette(21, name = "lovers_to_friends", type = "continuous")
+#' pal <- girlboss_palette(21, name = "fem_in_stem", type = "continuous")
 #' image(volcano, col = pal)
 girlboss_palette <- function(name, n, type = c("discrete", "continuous")) {
   type <- match.arg(type)
