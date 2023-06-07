@@ -17,7 +17,7 @@ girlboss_palettes <- list(
 
   d1_medschool = c("#FFBE80","#FF7C00", "#80A5FF", "#004AFF", "#AEC7A8", "#266916", "#A9AFBB","#535E77"),
 
-  elf_bar = c("#FF97E5", "#FF97B1", "#FFB197", "#FFE597", "#E5FF97", "#B1FF97", "#B9EFFF", "#DBB9FF")
+  elf_bar = c("#FF97E5", "#B9EFFF", "#FFE597", "#B1FF97", "#DBB9FF", "#FFB197", "#E5FF97", "#FF97B1")
 
 )
 
